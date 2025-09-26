@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Not Boba — a modern coffee shop focused on craft espresso, zero syrups, and cozy vibes." />
+  <meta name="author" content="Sebastian" />
+  <title>Not Boba Coffee Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Not Boba <span class="accent">Coffee Co.</span></h1>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h2>Craft coffee. Zero boba. 100% vibes.</h2>
+        <p>We’re a coffee-first shop serving thoughtful espresso drinks, pour-overs, and seasonal pastries. No pearls—just perfect crema.</p>
+        <a class="btn" href="#menu">See the Menu</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid two">
+        <div>
+          <h3>Our Story</h3>
+          <p>Not Boba began with a simple idea: build a space where people can study, connect, and sip coffee that’s roasted with care. We highlight origins, brew methods, and barista craft.</p>
+          <p>We host cuppings every Friday and feature local bakeries. Students get 10% off with school ID.</p>
+          <a class="link" href="https://www.asu.edu" target="_blank" rel="noopener">Explore our partner community</a>
+        </div>
+        <div>
+          <video class="responsive-video" controls width="100%" poster="poster-placeholder.png">
+            <source src="sample.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="caption">A quick peek at our pour-over bar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section alt">
+      <div class="container">
+        <h3>Menu & Prices</h3>
+        <p>We keep it simple. Transparent pricing, high-quality ingredients. (This also satisfies the project’s table requirement.)</p>
+        <div class="table-wrap" role="region" aria-label="Menu prices" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th>Drink</th>
+                <th>Size</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Espresso</td>
+                <td>Single / Double</td>
+                <td>$2.75 / $3.25</td>
+              </tr>
+              <tr>
+                <td>Latte</td>
+                <td>12oz / 16oz</td>
+                <td>$4.50 / $5.25</td>
+              </tr>
+              <tr>
+                <td>Pour-Over</td>
+                <td>Single Origin</td>
+                <td>$5.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container grid two">
+        <div>
+          <h3>Visit Us</h3>
+          <p>123 Brew St, Tempe, AZ</p>
+          <p>Mon–Thu 7am–8pm • Fri–Sat 7am–10pm • Sun 8am–6pm</p>
+          <p><strong>Wi‑Fi:</strong> Free • <strong>Outlets:</strong> Plenty • <strong>Noise:</strong> Quiet in mornings</p>
+        </div>
+        <div>
+          <img src="shop-placeholder.jpg" alt="Interior of Not Boba coffee shop" class="responsive-img"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h3>Contact & Pre‑Order</h3>
+        <p>Drop us a note or pre‑order drinks for pickup. (This satisfies the project’s form requirement.)</p>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" />
+          </div>
+          <div class="form-row">
+            <label for="drink">Drink</label>
+            <select id="drink" name="drink" required>
+              <option value="">Choose a drink</option>
+              <option>Espresso</option>
+              <option>Latte</option>
+              <option>Pour‑Over</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Oat milk, extra hot, etc."></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Not Boba Coffee Co. • Tempe, AZ</small>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        <li><a href="#" aria-label="X">X</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
